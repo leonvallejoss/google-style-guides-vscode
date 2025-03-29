@@ -6,6 +6,10 @@
 
 Configuración automatizada para implementar las guías de estilo de Google en Visual Studio Code, proporcionando formateadores y linters para diversos lenguajes de programación.
 
+![Demo de Google Style Guides para VSCode](https://github.com/leonvallejoss/google-style-guides-vscode/raw/main/assets/demo.gif)
+
+> 📝 **Nota:** Visita nuestra [documentación completa](https://leonvallejoss.github.io/google-style-guides-vscode/) para guías más detalladas.
+
 ## Índice
 
 - [Descripción general](#descripción-general)
@@ -142,6 +146,8 @@ google-style-guides-vscode/
 │   ├── style.yapf                 # Configuración para Python
 │   ├── vscode-settings.json       # Configuración para VSCode
 │   └── README.md                  # Instrucciones manuales
+├── docs/                          # Documentación para GitHub Pages
+├── assets/                        # Imágenes y GIFs demostrativos
 ├── install-yapf.sh                # Script específico para YAPF
 ├── vscode-google-style-config.sh  # Script principal
 ├── LICENSE                        # Licencia MIT
@@ -210,6 +216,16 @@ sudo chmod -R 755 google-style-guides-vscode
 cd google-style-guides-vscode
 sudo chmod +x *.sh
 ```
+
+## Documentación completa
+
+Para una experiencia de documentación mejorada, visita nuestra [página de documentación](https://leonvallejoss.github.io/google-style-guides-vscode/) que incluye:
+
+- Guías paso a paso con capturas de pantalla
+- Ejemplos de código antes/después para cada lenguaje
+- Tutoriales para configuraciones avanzadas
+- Preguntas frecuentes
+- Ejemplos de integración con entornos populares
 
 ## Contribuciones
 
