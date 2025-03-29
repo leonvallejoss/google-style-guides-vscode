@@ -1,0 +1,11 @@
+Este directorio está destinado a contener imágenes y GIFs demostrativos.
+
+Para crear un GIF demostrativo:
+1. Usa una herramienta como LICEcap, ScreenToGif, Gifox o Peek
+2. Graba una demostración mostrando:
+   - Instalación del script
+   - Archivo antes del formateo (mal formateado)
+   - Archivo después del formateo (siguiendo Google Style Guide)
+   - Demuestra el uso en diferentes lenguajes
+3. Guarda el GIF como "demo.gif" en este directorio
+4. Actualiza la referencia en el README.md si es necesario 
