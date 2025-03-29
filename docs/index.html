@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Style Guides para VSCode - Documentación</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Roboto:400,500,700&display=swap">
+    <style>
+        :root {
+            --primary: #4285F4;
+            --secondary: #34A853;
+            --warning: #FBBC05;
+            --error: #EA4335;
+            --light-gray: #f1f3f4;
+            --border-gray: #dadce0;
+            --text-primary: #202124;
+            --text-secondary: #5f6368;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-gray);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo img {
+            height: 48px;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Google Sans', sans-serif;
+            color: var(--text-primary);
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 24px;
+            color: var(--primary);
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin: 32px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-gray);
+        }
+        
+        h3 {
+            font-size: 20px;
+            margin: 24px 0 12px;
+        }
+        
+        p {
+            margin: 16px 0;
+            color: var(--text-secondary);
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul, ol {
+            margin: 16px 0 16px 24px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+        
+        pre {
+            background-color: var(--light-gray);
+            padding: 16px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+        
+        code {
+            font-family: monospace;
+            background-color: var(--light-gray);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        
+        .card {
+            background: white;
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            margin: 16px 0;
+        }
+        
+        .cta-button:hover {
+            background-color: #3b78e7;
+            text-decoration: none;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+        
+        .feature-card {
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 24px;
+        }
+        
+        .feature-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+        
+        footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-gray);
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+            
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.5 2.75v18.5c0 .414-.336.75-.75.75H2.25c-.414 0-.75-.336-.75-.75V2.75c0-.414.336-.75.75-.75h19.5c.414 0 .75.336.75.75z"/>
+                <path fill="#FFFFFF" d="M13.0001 7.2498H18.2501V8.4998H13.0001V7.2498ZM13.0001 9.7498H16.0001V10.9998H13.0001V9.7498ZM13.0001 12.2498H18.2501V13.4998H13.0001V12.2498ZM13.0001 14.7498H16.0001V15.9998H13.0001V14.7498ZM5.75 7.5L7.94 11.12L5.75 14.75H7.3L8.7 12.27L10.11 14.75H11.66L9.46 11.12L11.66 7.5H10.11L8.7 9.98L7.3 7.5H5.75Z"/>
+            </svg>
+            <div>
+                <h1 style="margin-bottom: 0;">Google Style Guides para VSCode</h1>
+                <p style="margin-top: 4px;">Configuración automatizada para las guías de estilo de Google</p>
+            </div>
+        </div>
+        <a href="https://github.com/leonvallejoss/google-style-guides-vscode" class="cta-button">Ver en GitHub</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Descripción general</h2>
+            <p>
+                Google Style Guides para VSCode es un conjunto de scripts y configuraciones que implementan automáticamente las guías de estilo
+                oficiales de Google en Visual Studio Code. Este proyecto facilita la configuración de linters y formateadores para múltiples
+                lenguajes de programación.
+            </p>
+
+            <div class="card">
+                <h3>¿Por qué usar Google Style Guides?</h3>
+                <p>
+                    Las guías de estilo de Google establecen estándares reconocidos en la industria para escribir código limpio, 
+                    legible y mantenible. Al seguir estas guías, aseguras que tu código sea consistente y siga buenas prácticas de programación.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Características principales</h2>
+            <div class="grid">
+                <div class="feature-card">
+                    <h3>Multi-lenguaje</h3>
+                    <p>Compatible con JavaScript, TypeScript, Python, HTML/CSS, JSON, C++, Go, Java, Markdown y Shell.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Instalación automatizada</h3>
+                    <p>Scripts que configuran VSCode y todas las herramientas necesarias con un solo comando.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Adaptativo</h3>
+                    <p>Soluciona automáticamente problemas como entornos Python gestionados externamente.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Documentado</h3>
+                    <p>Instrucciones detalladas, ejemplos y solución de problemas para cada configuración.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Instalación</h2>
+            <h3>Instalación completa</h3>
+            <p>Para configurar todas las guías de estilo:</p>
+            <pre><code># Clonar el repositorio
+git clone https://github.com/leonvallejoss/google-style-guides-vscode.git
+cd google-style-guides-vscode
+
+# Ejecutar el script principal
+chmod +x vscode-google-style-config.sh
+./vscode-google-style-config.sh</code></pre>
+
+            <h3>Solo YAPF para Python</h3>
+            <p>Si necesitas configurar específicamente YAPF para entornos Python gestionados externamente:</p>
+            <pre><code>chmod +x install-yapf.sh
+./install-yapf.sh</code></pre>
+        </section>
+
+        <section>
+            <h2>Guías de estilo implementadas</h2>
+            <ul>
+                <li><a href="https://google.github.io/styleguide/jsguide.html">JavaScript Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/tsguide.html">TypeScript Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/pyguide.html">Python Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/htmlcssguide.html">HTML/CSS Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/jsoncstyleguide.xml">JSON Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/cppguide.html">C++ Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/go/">Go Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/javaguide.html">Java Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/docguide/style.html">Markdown Style Guide</a></li>
+                <li><a href="https://google.github.io/styleguide/shellguide.html">Shell Style Guide</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Resolución de problemas comunes</h2>
+            <div class="card">
+                <h3>Error "externally-managed-environment" en Python</h3>
+                <p>Este error ocurre en sistemas con Python gestionado externamente (como macOS recientes).</p>
+                <p><strong>Solución:</strong> Usa nuestro script <code>install-yapf.sh</code> que crea un entorno virtual para YAPF.</p>
+            </div>
+
+            <div class="card">
+                <h3>Problemas de permisos</h3>
+                <p>Si encuentras errores "Permission denied" al ejecutar los scripts:</p>
+                <pre><code>sudo chmod -R 755 google-style-guides-vscode
+cd google-style-guides-vscode
+sudo chmod +x *.sh</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Próximos pasos</h2>
+            <a href="https://github.com/leonvallejoss/google-style-guides-vscode" class="cta-button">Explorar en GitHub</a>
+            <a href="https://github.com/leonvallejoss/google-style-guides-vscode/issues/new" class="cta-button" style="background-color: var(--secondary);">Reportar problema</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por <a href="https://github.com/leonvallejoss">León Vallejos</a> | Licencia MIT</p>
+        <p>Basado en las <a href="https://google.github.io/styleguide/">Guías de Estilo de Google</a></p>
+    </footer>
+</body>
+</html> 

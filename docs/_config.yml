@@ -1,0 +1,7 @@
+theme: jekyll-theme-minimal
+title: Google Style Guides para VSCode
+description: Configuración automatizada para implementar las guías de estilo de Google en Visual Studio Code
+show_downloads: true
+google_analytics:
+github:
+  repository_url: https://github.com/leonvallejoss/google-style-guides-vscode 
