@@ -84,6 +84,23 @@ sudo chmod +x *.sh
 - [Repositorio en GitHub](https://github.com/leonvallejoss/google-style-guides-vscode)
 - [Reportar problema](https://github.com/leonvallejoss/google-style-guides-vscode/issues/new)
 
+## 🚧 Proyecto en Evolución
+
+Este proyecto se encuentra en desarrollo activo y continua evolución. Estamos trabajando constantemente para:
+
+- Añadir soporte para más lenguajes de programación
+- Mejorar la compatibilidad con diferentes entornos de desarrollo
+- Optimizar los scripts de instalación
+- Incorporar las últimas actualizaciones de las guías de estilo de Google
+
+Si encuentras algún problema o tienes sugerencias para mejorar, no dudes en [abrir un issue](https://github.com/leonvallejoss/google-style-guides-vscode/issues/new) o contribuir directamente con un pull request. ¡Tu feedback es muy valioso para el crecimiento de este proyecto!
+
+**Próximas características:**
+- Integración con más herramientas de CI/CD
+- Soporte para entornos containerizados (Docker)
+- Configuraciones para equipos de desarrollo
+- Plugins adicionales para IDEs basados en JetBrains
+
 ---
 
 Creado por [León Vallejos](https://github.com/leonvallejoss) | Licencia MIT | Basado en las [Guías de Estilo de Google](https://google.github.io/styleguide/) 
